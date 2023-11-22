@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/mapping" name="Mapping" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <datamapper config="gov:datamapper/Mapping.dmc" inputSchema="gov:datamapper/Mapping_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/Mapping_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/Mapping_xsltStyleSheet.xml"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
